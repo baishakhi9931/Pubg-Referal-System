@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html translate="no">
+<head>
+	<meta charset="UTF-8">
+	<meta name="google" content="notranslate">
+	{% if refer %}
+		<title>{{name}} sent you free PUBG UC, Grab it Now. | Freepubguc.in</title>
+		<meta property="og:title" content="{{name}} sent you free PUBG UC, Grab it Now. | Freepubguc.in" />
+	{% else %}
+		<title>Grab your free PUBG UC upto 100 | Freepubguc.in</title>
+		<meta property="og:title" content="Grab your free PUBG UC upto 100 | Freepubguc.in" />
+	{% endif %}
+	<meta name="description" content="Get upto 100 free PUBG UC, just follow some simple steps." />
+	<meta name="keywords" content="pubg uc, free pubg uc, pubg uc 100, freepubguc" />
+	<meta name="robots" content="all">
+	<meta name="author" content="freepubguc">
+	<meta property="og:description" content="Get upto 100 free PUBG UC, just follow some simple steps." />
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="Freepubguc" />
+	<meta property="og:image" content="http://freepubguc.in/static/images/og-img.jpg" />
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script>
+	$(document).ready(function(){
+		$('.slider').slider({indicators: false});
+	});
+	</script>
+	<script type="text/javascript">
+		window._mNHandle = window._mNHandle || {};
+		window._mNHandle.queue = window._mNHandle.queue || [];
+		medianet_versionId = "3121199";
+	</script>
+	<script src="https://contextual.media.net/dmedianet.js?cid=8CUD7ONY7" async="async"></script>
+
+</head>
+
+<style>
+	  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+</style>
+
+<body>
+	<main>
+	<div class="caption center-align">
+		<div class="row">
+			<div class="col l4 offset-l4 m6 offset-m3 s12" style="margin-top: 6vh;">
+				<div class="card" style="background:rgba(250,250,250,0.8)">
+					<div class="card-action">
+						<h3 class="center">
+							Registration Form
+						</h3>
+						{% if name %}
+						REFERRED BY: {{name}}
+						{% endif %}
+					</div>
+			
+					<div class="card-content" style="background:rgba(0,0,0,0.4)">
+						<form method="post" action="/">
+							<div class="input-field">
+								<input type="text" name="name" id="Name" required>
+								<label for="username"><span class="white-text"><b>Enter Your Name</b></span></label>
+							</div>
+		
+							<div class="input-field">
+								<input type="email" name="email" id="email" required>
+								<label for="email"><span class="white-text"><b>Enter E-mail Address</b></span></label>
+							</div>
+		
+							<div class="input-field">
+								<input type="text" name="pubg_id" id="pubg_id" required>
+								<label for="pubgid"><span class="white-text"><b>Enter PUBG ID</b></span></label>
+							</div>
+							<input type="hidden" name="reffered_by" id="reffered_by" placeholder="reffered_by" value="{{userid}}">
+		
+							<div class="center">
+								<button type="submit" class="btn-large waves-effect waves-light black">Submit</button>
+							</div>
+							{% csrf_token %}
+						</form>
+						<br>
+						<div class="center">
+							<a href="/checkprofile">
+								<button class="btn waves-effect waves-light red">Already Registered?</button>
+							</a>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="col l4 m3 s12" style="margin-top: 10vh;">
+				<div id="752229387">
+					<script type="text/javascript">
+						try {
+							window._mNHandle.queue.push(function (){
+								window._mNDetails.loadTag("752229387", "300x250", "752229387");
+							});
+						}
+						catch (error) {}
+					</script>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+<div class="fullscreen slider" style="z-index: -1;">
+    <ul class="slides">
+		<li>
+			<img src="/static/pic1.jpeg">
+		</li>
+	  
+		<li>
+			<img src="/static/pic2.jpeg">
+		</li>
+		
+		<li>
+			<img src="/static/pic3.jpeg">
+		</li>
+		
+		<li>
+			<img src="/static/pic4.jpeg">
+		</li>
+    </ul>
+</div>
+</main>
+
+<footer class="page-footer">
+	<div class="container">
+	  <div class="row">
+		<div class="col l6 s12">
+			<h5 class="white-text">Designed & Developed by:</h5>
+			<p class="grey-text text-lighten-4">
+				<h6>Power Puff Girls<br>Sakshi Kumari and Baishakhi Chakraborty</h6>
+			</p>
+		</div>
+	  </div>
+	</div>
+  </footer>
+
+</body>
+</html>

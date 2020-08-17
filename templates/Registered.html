@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html translate="no">
+<head>
+	<meta charset="UTF-8">
+	<meta name="google" content="notranslate">
+  <meta name="robots" content="noindex">
+  <title>Referals | Freepubguc.in</title>
+  <meta property="og:title" content="Referals | Freepubguc.in" />
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+ $(document).ready(function(){
+    $('.slider').slider({indicators: false});
+  });
+</script>
+
+
+<title>PUBG</title>
+
+</head>
+
+<style>
+  	  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+</style>
+
+<body>
+<main>
+	<div class="caption center-align">
+		<div class="row">
+			<div class="col l4 offset-l4 m10 offset-m1 s12" style="margin-top: 10vh;">
+				<div class="card" style="background:rgba(250,250,250,0.8)">
+					<div class="card-action">
+						<h4 class="center" style="margin: 1px;">
+							Your Referals
+						</h4>
+					</div>
+			
+					<div class="card-content" style="background:rgba(0,0,0,0.4); text-align: left; padding-bottom: 10px; overflow: scroll; max-height: 60vh;">
+            <span style="text-align: left; color: #fff; font-size: 20px;">Total Successful Referals: {{count_user}}</span>
+            <br>
+						<span style="text-align: left; color: #fff; font-size: 20px;">Referal Remaining for reward: {{rem_user}}</span>
+            <br>
+            {% if rewards %}
+            <div class="card center lime lighten-2 black-text" style="">
+              <div style="font-size: 2rem;">
+                Your Reward
+              </div>
+              <div style="font-size: 5rem;" >
+                {{coins}}
+              </div>
+              <div style="font-size: 1.4rem;">
+                Coins status: {{coints_sent}}
+              </div>
+              
+            </div>
+            {% endif %}
+            {% if count_user %}
+              <table class="striped">
+                <thead>
+                  <tr>
+                    <th>Sl No</th>
+                    <th>Name</th>
+                  </tr>
+                </thead>
+        
+                <tbody>
+                  {% for each in users %} 
+                  <tr>
+                    <td>{{ forloop.counter }}</td>
+                    <td>{{ each }}</td>
+                  </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+              <br>
+            {% endif %}
+            <div class="center">
+              <a href="/{{userid}}/myprofile" style="color: #fff;">
+                <button class="btn waves-effect waves-light red">Refer Now</button>
+              </a>
+            </div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+<div class="fullscreen slider" style="z-index: -1;">
+  <ul class="slides">
+		<li>
+			<img src="/static/pic1.jpeg">
+		</li>
+	  
+		<li>
+			<img src="/static/pic2.jpeg">
+		</li>
+		
+		<li>
+			<img src="/static/pic3.jpeg">
+		</li>
+		
+		<li>
+			<img src="/static/pic4.jpeg">
+		</li>
+  </ul>
+</div>
+</main>
+<footer class="page-footer">
+	<div class="container">
+	  <div class="row">
+		<div class="col l6 s12">
+			<h5 class="white-text">Designed & Developed by:</h5>
+			<p class="grey-text text-lighten-4">
+				<h6>Power Puff Girls<br>Sakshi Kumari and Baishakhi Chakraborty</h6>
+			</p>
+		</div>
+	  </div>
+	</div>
+  </footer>
+</body>
+</html>

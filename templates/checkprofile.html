@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html translate="no">
+<head>
+	<meta charset="UTF-8">
+	<meta name="google" content="notranslate">
+    <meta name="robots" content="noindex">
+    <title>Find Your Account | Freepubguc.in</title>
+    <meta property="og:title" content="Profile | Freepubguc.in" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+ $(document).ready(function(){
+    $('.slider').slider({indicators: false});
+  });
+</script>
+
+<title>PUBG</title>
+
+</head>
+
+<style>
+		  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+</style>
+
+<body>
+<main>
+	<div class="caption center-align">
+		<div class="row">
+			<div class="col l4 offset-l4 m10 offset-m1 s12" style="margin-top: 10vh;">
+				<div class="card" style="background:rgba(250,250,250,0.8)">
+
+					<div class="card-action">
+						<h3 class="center">
+							Find Your Account
+						</h3>
+					</div>
+
+					<div class="card-content" style="background:rgba(0,0,0,0.4)">
+						<form method="post" action="/checkprofile/">
+							<div class="input-field">
+								<input type="text" name="name" id="Name" required>
+								<label for="username"><span class="white-text"><b>Enter Your Email or Pubg ID</b></span></label>
+							</div>
+		
+							<div class="center">
+								<button type="submit" class="btn-large waves-effect waves-light black">Find Now</button>
+							</div>
+							{% csrf_token %}
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<div class="fullscreen slider" style="z-index: -1;">
+    <ul class="slides">
+		<li>
+			<img src="/static/pic1.jpeg">
+		</li>
+	  
+		<li>
+			<img src="/static/pic2.jpeg">
+		</li>
+		
+		<li>
+			<img src="/static/pic3.jpeg">
+		</li>
+		
+		<li>
+			<img src="/static/pic4.jpeg">
+		</li>
+    </ul>
+</div>
+</main>
+<footer class="page-footer">
+	<div class="container">
+	  <div class="row">
+		<div class="col l6 s12">
+			<h5 class="white-text">Designed & Developed by:</h5>
+			<p class="grey-text text-lighten-4">
+				<h6>Power Puff Girls<br>Sakshi Kumari and Baishakhi Chakraborty</h6>
+			</p>
+		</div>
+	  </div>
+	</div>
+  </footer>
+
+<script>
+	function copytext() {
+		var copyText = document.getElementById("sharelink");
+		copyText.select();
+		copyText.setSelectionRange(0, 99999);
+		document.execCommand("copy");
+
+		document.getElementById("cpbt").innerHTML = "Copied"
+	}
+</script>
+
+</body>
+</html>

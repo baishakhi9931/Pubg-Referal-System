@@ -1,0 +1,33 @@
+{% load static %}
+<html>
+    <head>
+    	WELCOME TO REGISTRATION PORTAL!<br>
+
+    	REFERRED BY: {{name}}
+    </head>
+    <form method="post" action="/">
+    		<label for="Name"> Name:</label>
+		<input type="text" id="Name" placeholder="name" name="name" required>		
+		<div>
+			<lable for="email">Email:</lable>
+			<input type="email" name="email" id="email" placeholder="Email Address" required>			
+		</div>	
+		<div>
+			<label for="pubg_id">PUBG ID </label>
+			<input type="text" name="pubg_id" id="pubg_id" placeholder="Pubg_id" required>
+		</div>       	
+		<input type="hidden" name="reffered_by" id="reffered_by" placeholder="reffered_by" value="{{userid}}">    	
+		<div>
+			<button type="submit"> Submit </button>
+		</div>
+        {% csrf_token %}
+    </form>
+</html>
+<!--
+Ab dekho, ye jo link gya, abc.com/mayank, so input box me bhi show kr rha. Ha. Toh wo accha nhi lg rha, better to hide that box, make that input box hidden.ha
+Now you test with any link. ok
+
+That input box is still there, but not visible to anyone.Kisi ko pata bhi nhi chal rha. aur apna kaam bhi ho ja rha.
+Ab batao kahaa kyaa confusion hai, kyaa kyaa issue hai. samajh th aaya khud try krenge tab clear hojaega aur.
+Yaa fir kl aaram se, call pe doubt puchh lenaa. Project 95% completed. baaap re. Congrats we have successfully completed a guided project on Pubg Point Bla bla webiste. Ohhhh. Accha thik hai, kl meri office hai, morning me uthna bhi hai, tum ek baar code bhi dekhh lena..
+-->
